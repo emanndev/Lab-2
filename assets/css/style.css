@@ -1,11 +1,92 @@
 :root {
-    --bg-color: #fffdfa;
-    --text-color-1: #797b80;
-    --text-color-2: #fff;
-    --text-color-3: #00001a;
-    --text-color-4: #c5c6ce;
-    --text-color-5: #e9ab53;
-    --button-bg-color: #f15e50;
-    --bg-color-2: #00001a;
-  }
-  
+  --bg-color: #fffdfa;
+  --text-color-1: #797b80;
+  --text-color-2: #fff;
+  --text-color-3: #00001a;
+  --text-color-4: #c5c6ce;
+  --text-color-5: #e9ab53;
+  --button-bg-color: #f15e50;
+  --bg-color-2: #00001a;
+}
+
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter-bold";
+  src: url(../fonts/static/Inter-Bold.ttf);
+}
+@font-face {
+  font-family: "Inter-extra-bold";
+  src: url(../fonts/static/Inter-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Inter-regular";
+  src: url(../fonts/static/Inter-Regular.ttf);
+}
+
+body {
+  font-family: 'Inter-regular', Arial;
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  transition: all 0.15s ease;
+}
+
+/* Main Container */
+.main-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Navigation Bar*/
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo img {
+  width: 45px;
+  height: 28px;
+}
+
+.nav-bar ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: var(--text-color-1);
+  transition: color 0.3s ease;
+}
+
+.nav-bar ul li a:hover {
+  color: var(--button-bg-color);
+}
+
+.hamburger {
+  display: none;
+}
+
+.close-icon {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
