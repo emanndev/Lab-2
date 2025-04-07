@@ -144,3 +144,50 @@ body {
 .btn:hover {
   background-color: var(--bg-color-2);
 }
+
+ /* Section Two */
+ .home-page-section-two {
+  background-color: var(--bg-color-2);
+  padding: 1.5rem;
+}
+
+.heading-news-info {
+  display: grid;
+  gap: 2rem;
+}
+
+.heading-news-info h1 {
+  font-size: 2rem;
+  color: var(--text-color-5);
+}
+
+.brief-info {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.brief-info h2 {
+  font-size: 1.2rem;
+  color: var(--text-color-2);
+  font-family: 'Inter-bold', Arial;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out;
+}
+
+.brief-info h2:hover{
+  color: var(--text-color-5);
+
+}
+
+.brief-info p {
+  font-size: 0.9rem;
+  color: var(--text-color-4);
+  line-height: 1.6;
+}
+
+.brief-info hr {
+  height: 1px;
+  background-color: var(--text-color-1);
+  opacity: 0.3;
+  margin: 1.5rem 0 0.2rem;
+}
