@@ -9,7 +9,31 @@
 </head>
 <body>
  
+  <main class="main-container">
+    <nav class="navbar-container">
+      <div class="header">
+        <div class="logo">
+          <a href="index.html"><img src="./assets/images/logo.svg" alt="Logo"></a>
+        </div>
+        <div class="hamburger">
+          <img class="hamburger-icon" onclick="showMenu()" src="./assets/images/icon-menu.svg" alt="hamburger icon">
+        </div>
+      </div>
+      <div class="overlay" id="overlay"></div>
+      <div class="nav-bar" id="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+        <img class="close-icon" onclick="hideMenu()" src="./assets/images/icon-menu-close.svg" alt="close icon">
+      </div>
+    </nav>
 
- 
+
+    
+  </main>
 </body>
 </html>
