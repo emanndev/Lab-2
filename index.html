@@ -114,5 +114,26 @@
 
       </div>
   </main>
+
+  <script>
+    const navbar = document.getElementById("navbar");
+    const overlay = document.getElementById('overlay');
+
+    function showMenu(){
+      navbar.style.right = "0";
+      overlay.style.opacity = "1";
+      overlay.style.display = "block";
+      overlay.style.transition = "opacity 0.5s ease-in-out";
+    }
+    
+    function hideMenu(){
+      navbar.style.right = "-200px";
+      overlay.style.opacity = "0";
+      overlay.style.transition = "opacity 0.5s ease-in-out";
+      setTimeout(() => {
+        overlay.style.display = "none";
+      }, 500);
+    }
+  </script>
 </body>
 </html>
