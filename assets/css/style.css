@@ -124,11 +124,10 @@ body {
 }
 
 .heading-subtext p {
-  font-size: 1rem;
+  font-size: 15px;
   color: var(--text-color-1);
   line-height: 1.6;
-  max-width: 20rem;
-
+  /* max-width: 92.5%; */
 }
 
 .btn {
@@ -192,7 +191,6 @@ body {
   height: 1px;
   background-color: var(--text-color-1);
   opacity: 0.3;
-  margin: 1.5rem 0 0.2rem;
 }
 
 /* Section Three */
@@ -241,7 +239,7 @@ body {
 }
 
 
-/* Desktop Layout */
+/* Tablet and Desktop Layout */
 @media (min-width: 768px) and (min-width: 1024px) {
   .main-container {
     padding: 5rem 6rem;
@@ -307,6 +305,27 @@ body {
 
   .home-page-section-two {
     grid-area: section2;
+  }
+  .heading-news-info h1{
+    font-size: 40px;
+    font-family: 'Inter-bold', Arial;
+  }
+
+  .brief-info{
+    margin: 1rem 0 1rem;
+    text-align: left;
+  }
+
+  .brief-info h2{
+    font-size: 20px;
+    font-family: 'Inter-extra-bold', Arial;
+    margin-top: -10px;
+  }
+
+  .brief-info p{
+  line-height: 1.8;
+  font-family: "Inter", Arial;
+  font-size: 15px;
   }
 
   .home-page-section-three {
