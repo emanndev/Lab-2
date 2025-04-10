@@ -399,4 +399,48 @@ body {
 
 
 
+/* Animations */
 
+/* Fade In Animation */
+.fade-in {
+  animation: fadeIn 1.5s ease-in forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide In left Animation */
+.slide-in-left {
+  animation: slideInLeft 1s ease-out forwards;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes slideInLeft {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+/* Slide Up Animation */
+.slide-up {
+  animation: slideUp 1s ease-out forwards;
+  transform: translateY(70%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
